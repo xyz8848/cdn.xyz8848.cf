@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-Hands">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>xyz8848 CDN</title>
+    <meta content="Made by xyz8848" name="description">
+    <meta content="xyz8848, xyz8848CDN, xyz8848 CDN" name="keywords">
+
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 text-center">
+                    <h1>xyz8848 CDN</h1>
+                    <!-- <h2></h2> -->
+                </div>
+            </div>
+
+            <p style="text-align:center">This site runs:</p>
+            <p id="running_time" style="text-align:center"></p>
+
+            <!-- <div class="text-center">
+                <a href="http://docs.xyz8848.com/" class="btn-get-started scrollto" target="_blank">Get Started</a>
+            </div> -->
+
+            <!-- <div class="row icon-boxes">
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                        <div class="icon"><i class="ri-stack-line"></i></div>
+                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="icon-box">
+                        <div class="icon"><i class="ri-palette-line"></i></div>
+                        <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                        <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="icon-box">
+                        <div class="icon"><i class="ri-command-line"></i></div>
+                        <h4 class="title"><a href="">Magni Dolores</a></h4>
+                        <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="icon-box">
+                        <div class="icon"><i class="ri-fingerprint-line"></i></div>
+                        <h4 class="title"><a href="">Nemo Enim</a></h4>
+                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+  <!-- Vendor JS Files -->
+  <script no-pjax="">
+    // var running_days = document.getElementById("running_days");
+    // var running_hours = document.getElementById("running_hours");
+    // var running_mins = document.getElementById("running_mins");
+    // var running_secs = document.getElementById("running_secs");
+    var running_time = document.getElementById("running_time");
+    function refresh_blog_running_time() {
+    var time = new Date() - new Date(2022, 4, 7, 0, 0, 0); /*此处日期的月份改为自己真正月份的前一个月*/
+    var d = parseInt(time / 24 / 60 / 60 / 1000);
+    var h = parseInt((time % (24 * 60 * 60 * 1000)) / 60 / 60 / 1000);
+    var m = parseInt((time % (60 * 60 * 1000)) / 60 / 1000);
+    var s = parseInt((time % (60 * 1000)) / 1000);
+    // running_days.innerHTML = d + "d";
+    // running_hours.innerHTML = h + "h";
+    // running_mins.innerHTML = m + "m";
+    // running_secs.innerHTML = s + "s";
+    running_time.innerHTML = d + "d " + h + "h " + m + "m " + s + "s ";
+    }
+    refresh_blog_running_time();
+    if (typeof bottomTimeIntervalHasSet == "undefined") {
+    var bottomTimeIntervalHasSet = true;
+    setInterval(function () {
+    refresh_blog_running_time();
+    }, 500);
+    }
+    </script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
